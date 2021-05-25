@@ -19,15 +19,24 @@
 
     <form id="survey-form">
         <div id="credentials">
-            <label id="name-label">Name</label>
+            <div class='credentials'> 
+						<label id="name-label">Name</label>
             <input id="name" placeholder="What's yo name, sonny?" required />
+            </div>
 
+						<div class='credentials'> 
             <label id="email-label">Email</label>
             <input type="email" id="email" placeholder="Enter your Email" required />
+            </div>
 
+            <div class='credentials'> 
             <label id="number-label">Age</label>
             <input type="number" id="number" placeholder="Age" min="12" max="75" />
+						</div>
         </div>
+
+<div id="cohort section">
+
         <p id="section-title"><b>What Cohort Did You Test The Product?</b></p>
         <select id="dropdown" required>
             <option disabled>Select Cohort</option>
@@ -45,9 +54,10 @@
             <input type="radio" name="pitch" value="Banana Man" />The Banana man</label>
         <label>
             <input type="radio" name="pitch" value="Albus Dumbledore" />Albus Dumbledore</label>
-        </div>
 
-        <div id="checkbox">
+ </div>
+
+        <div id="checkbox section">
             <p id="section-title">How Would You Describe Your Experience?</p>
 
             <label><input name="experience" value="awesome" type="checkbox" />Awesome! The Team was great and I'm definitely recommending this.</label>
@@ -68,7 +78,8 @@
 
             <label><input name="experience" value="awesome" type="checkbox" />I don't know</label>
         </div>
-        <div class="feedback">
+
+        <d iv class="feedback" id="sectiopn">
             <div>
                 <p>Any feedback for the Banana Car?</p>
                 <textarea id="feedback" name="feedback" placeholder="What feedback do you have?"></textarea>
@@ -81,6 +92,7 @@
         </div>
     </form>
 
+<p>Github Link: <a href="https://github.com/itsrajan/fcc-rwd/tree/main/tribute" style="color: white">https://github.com/itsrajan/fcc-rwd/tree/main/tribute</a></p>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
