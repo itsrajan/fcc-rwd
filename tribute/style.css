@@ -42,3 +42,7 @@ img {
   padding: 0 20% 0 20%;
   text-align: left;
 }
+
+#tribute-link {
+  color: rgb(118, 118, 236) !important;
+}
