@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FCC - Survey</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-main">
+            <h1 id="title">Banana Car Feedback Form</h1>
+            <p id="description">Tell Us How We Did!</p>
+        </div>
+        <img id="image" src="https://i.pinimg.com/originals/c5/96/74/c59674619f63d71a874e407596dd684a.jpg">
+    </div>
+
+    <form id="survey-form">
+        <div id="credentials">
+            <label id="name-label">Name</label>
+            <input id="name" placeholder="What's yo name, sonny?" required />
+
+            <label id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" required />
+
+            <label id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Age" min="12" max="75" />
+        </div>
+        <p id="section-title"><b>What Cohort Did You Test The Product?</b></p>
+        <select id="dropdown" required>
+            <option disabled>Select Cohort</option>
+            <option value="cohorta">Cohort A - January 3</option>
+            <option value="cohortb">Cohort B - January 5 </option>
+            <option value="cohortc">Cohort C - January 9</option>
+            <option value="cohortd">Cohort D - January 13</option>
+            <option value="cohorte">Cohort E - January 17</option>
+        </select>
+
+        <p id="section-title">Who Was Pitching the Product</p>
+        <label>
+            <input type="radio" name="pitch" value="John Doe" checked />John Doe</label>
+        <label>
+            <input type="radio" name="pitch" value="Banana Man" />The Banana man</label>
+        <label>
+            <input type="radio" name="pitch" value="Albus Dumbledore" />Albus Dumbledore</label>
+        </div>
+
+        <div id="checkbox">
+            <p id="section-title">How Would You Describe Your Experience?</p>
+
+            <label><input name="experience" value="awesome" type="checkbox" />Awesome! The Team was great and I'm definitely recommending this.</label>
+
+            <label><input name="experience" value="awesome" type="checkbox" />It's a good product.</label>
+
+            <label><input name="experience" value="awesome" type="checkbox" />The product met my needs, but I will not consider purchasing it.</label>
+
+            <label><input name="experience" value="awesome" type="checkbox" />Terrible! I did not like it one bit!</label>
+
+            <label><input name="experience" value="awesome" type="checkbox" />I think I might need more time to make my decision</label>
+
+            <label><input name="experience" value="awesome" type="checkbox" />I will purchase this</label>
+
+            <label><input name="experience" value="awesome" type="checkbox" />I will not purchase this</label>
+
+            <label><input name="experience" value="awesome" type="checkbox" />I will consider purchasing this</label>
+
+            <label><input name="experience" value="awesome" type="checkbox" />I don't know</label>
+        </div>
+        <div class="feedback">
+            <div>
+                <p>Any feedback for the Banana Car?</p>
+                <textarea id="feedback" name="feedback" placeholder="What feedback do you have?"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">
+                    Submit Response
+                </button>
+            </div>
+        </div>
+    </form>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
